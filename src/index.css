@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #020617;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', 'Plus Jakarta Sans', cursive, sans-serif;
+}
+
+@keyframes floatFade {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-80px) scale(1.3);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-160px) scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-float-fade {
+  animation: floatFade 1.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(251, 191, 36, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 191, 36, 0.6);
+}

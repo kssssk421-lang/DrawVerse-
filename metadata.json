@@ -1,0 +1,6 @@
+{
+  "name": "DRAWVERSE",
+  "description": "O jogo de desafios insanos de desenho multiplayer inspirado em Gartic Phone! Jogue o modo Misturado / What the hell! e combine desenhos hilários com amigos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
